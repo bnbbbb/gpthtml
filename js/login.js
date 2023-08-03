@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     localStorage.setItem("access_token", accessToken);
                     localStorage.setItem("userid", userEmail);
                     // 로그인이 성공했으므로, index.html로 리다이렉트합니다.
-                    window.location.href = "cat.html";
+                    window.location.href = "index.html";
                 } else {
                     // 로그인 실패 시 오류 메시지를 화면에 표시합니다.
                     resultDiv.innerHTML = `<p>${data.message}</p>`;

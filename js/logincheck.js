@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("로그아웃 상태입니다.");
     }
 });
+
+const token = localStorage.getItem('access_token');
+const logoutButton = document.querySelector('.logout');
+const loginButton = document.querySelector('.login');
+if (token){
+    loginButton.style.display = 'none'
+    logoutButton.style.display = 'block'
+}
+else{
+    loginButton.style.display = 'block'
+    logoutButton.style.display = 'none'
+}
