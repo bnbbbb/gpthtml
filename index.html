@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/card.css" />
+        <link rel="stylesheet" href="./css/modal.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <div class="header">
+            <h1><a href="index.html">PET GPT</a></h1>
+            <div class="headerbtn"></div>
+        </div> -->
+        <div id="headerContainer"></div>
+        <!-- // Header -->
+
+        <!-- 메인화면 및 선택창 -->
+        <main class="main">
+            <nav>
+                <section>
+                    <h2>동물 백과사전</h2>
+
+                    <p>
+                        고양이와 강아지를 위한 ChatGPT - 당신의 반려동물에 관한
+                        질문에 답변해드립니다!
+                    </p>
+                    <p>
+                        아래 버튼 눌러 관련된 질문, 조언, 행동 문제, 건강 돌봄
+                        등에 대해 물어보세요!!
+                    </p>
+                </section>
+            </nav>
+            <form class="form_sel" action="post">
+                <button
+                    type="button"
+                    onclick="location.href='cat.html'"
+                    id="btn"
+                >
+                    고양이
+                </button>
+                <button
+                    type="button"
+                    onclick="location.href='dog.html'"
+                    id="btn"
+                >
+                    강아지
+                </button>
+            </form>
+        </main>
+        <!-- //메인화면 및 선택창 -->
+
+        <!--footer-->
+        <p class="footer">Copyright 2023. bnbbbb</p>
+        <!--//footer-->
+        <script src="./js/logincheck.js" defer type="module"></script>
+    </body>
+</html>

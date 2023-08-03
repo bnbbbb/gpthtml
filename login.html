@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>로그인</title>
+    </head>
+    <body>
+        <h1>로그인</h1>
+        <form id="loginForm">
+            <!-- 로그인에 필요한 input fields 등을 추가 -->
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit" class="logbtn">로그인</button>
+        </form>
+
+        <!-- 결과를 보여줄 엘리먼트 -->
+        <div id="result"></div>
+        <script src="./js/login.js" defer type="module"></script>
+    </body>
+</html>

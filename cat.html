@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/loading.css" />
+        <link rel="stylesheet" href="./css/card.css" />
+        <link rel="stylesheet" href="./css/modal.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+        <style></style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <h1><a href="index.html">PET GPT</a></h1>
+            <div class="btn-header">
+                <a href="dog.html">강아지</a>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- // Header -->
+
+        <!-- 메인화면 및 검색창 -->
+        <main class="maincat">
+            <section class="main-text">
+                <h2>고양이와 관련된 질문 해주세요.</h2>
+                <h2>구체적으로 작성해주세요.</h2>
+            </section>
+            <form class="form_sel" action="post" autofocus>
+                <div class="age">
+                    <h3>고양이 생애주기 선택</h3>
+                    <label
+                        ><input type="radio" name="age" value="baby" />
+                        자묘기</label
+                    >
+                    <label
+                        ><input type="radio" name="age" value="adolescence" />
+                        청년기</label
+                    >
+                    <label
+                        ><input type="radio" name="age" value="mature" />
+                        성묘기</label
+                    >
+                    <label
+                        ><input type="radio" name="age" value="latemid" />
+                        장년기</label
+                    >
+                    <label
+                        ><input type="radio" name="age" value="midlife" />
+                        중년기</label
+                    >
+                    <label
+                        ><input type="radio" name="age" value="old" />
+                        노묘기</label
+                    >
+                </div>
+                <div class="guide">
+                    <h3>고양이 종합 가이드</h3>
+                    <label
+                        ><input type="radio" name="guide" value="apple" />
+                        품종</label
+                    >
+                    <label
+                        ><input type="radio" name="guide" value="banana" />
+                        건강과 질병
+                    </label>
+                    <label
+                        ><input type="radio" name="guide" value="banana" /> 행동
+                    </label>
+                    <label
+                        ><input type="radio" name="guide" value="banana" />
+                        훈련과 양육</label
+                    >
+                    <label
+                        ><input type="radio" name="guide" value="banana" />
+                        영양과 사료</label
+                    >
+                    <label
+                        ><input type="radio" name="guide" value="banana" />
+                        생활환경과 관리</label
+                    >
+                    <label
+                        ><input type="radio" name="guide" value="banana" />
+                        종합적인 팁과 조언</label
+                    >
+                </div>
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="카테고리 선택후 디테일하게 질문해주세요."
+                />
+                <button type="submit" id="btn">전송</button>
+            </form>
+        </main>
+        <!-- //메인화면 및 검색창 -->
+
+        <!-- 카드  -->
+        <div id="card"></div>
+        <!-- //카드 -->
+
+        <!-- 모달 -->
+        <div id="modal"></div>
+        <!-- //모달-->
+
+        <!--footer-->
+        <p class="footer">Copyright 2023. bnbbbb</p>
+        <!--//footer-->
+        <script src="./js/main.js" defer type="module"></script>
+        <script src="./js/logincheck.js" defer type="module"></script>
+    </body>
+</html>
